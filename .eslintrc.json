@@ -5,7 +5,7 @@
     {
       "files": ["*.ts"],
       "parserOptions": {
-        "project": ["tsconfig.json"],
+        "project": ["fabio-sports-chrono/tsconfig.app.json"],
         "createDefaultProgram": true
       },
       "extends": [

@@ -10,8 +10,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "android:open": "npx cap open android",
-    "android:sync": "ionic capacitor sync android"
+    "setup-extensions": "bash scripts/setup-extensions.sh",
+    "android:clean": "rm -rf android/ && npx cap add android",
+    "android:build": "ng build && npx cap sync",
+    "android:open": "npx cap open android"
   },
   "private": true,
   "dependencies": {
