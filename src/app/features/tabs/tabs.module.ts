@@ -14,8 +14,8 @@ import { PipesModule } from 'src/app/shared/pipes/pipes.module';
     CommonModule,
     FormsModule,
     TabsPageRoutingModule,
-    PipesModule
+    PipesModule,
   ],
-  declarations: [TabsPage]
+  declarations: [TabsPage],
 })
 export class TabsPageModule {}
