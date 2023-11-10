@@ -18,13 +18,11 @@
     "importHelpers": true,
     "target": "es2022",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "useDefineForClassFields": false,
     "paths": {
-      "@features/*": ["src/app/features/*"]
+      "@features/*": ["src/app/features/*"],
+      "@generalSharedComponents/*": ["src/app/shared/components/*"]
     }
   },
   "angularCompilerOptions": {

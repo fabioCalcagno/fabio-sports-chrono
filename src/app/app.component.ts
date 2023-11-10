@@ -12,11 +12,12 @@ export class AppComponent {
     this.runConfig();
   }
 
-  private runConfig(){
-    this.platform.ready().then(async ()=>{
-      await StatusBar.setOverlaysWebView({ overlay: true });
-      await StatusBar.show();
-    })
+  private runConfig() {
+    this.platform.ready().then(async () => {
+      if (this.platform.is('hybrid')) {
+        await StatusBar.setOverlaysWebView({ overlay: true });
+        await StatusBar.show();
+      }
+    });
   }
-
 }

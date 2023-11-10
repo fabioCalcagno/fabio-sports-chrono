@@ -1,37 +1,39 @@
 import { Component } from '@angular/core';
+import { TabsInterface } from '@features/_interfaces/components.interface';
 import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',
-  styleUrls: ['tabs.page.scss']
+  styleUrls: ['tabs.page.scss'],
 })
 export class TabsPage {
-
   constructor(private navCtrl: NavController) {}
 
   readonly objectTabs = [
     {
-      tabId: 'tabConfigure',
-      route: '/tabs/tab1',
-      text: 'Configure',
-      icon: 'alarm-outline'
+      route: 'tabs/home',
+      text: 'Início',
+      icon: 'home-outline',
     },
     {
-      tabId: 'tabConfigure',
-      route: '/tabs/tab2',
+      route: 'tabs/home',
       text: 'Configure',
-      icon: 'ellipse'
+      icon: 'alarm-outline',
     },
     {
-      tabId: 'tabConfigure',
-      route: '/tabs/tab3',
-      text: 'Configure',
-      icon: 'square'
-    }
-  ];
+      route: 'tabs/tab2',
+      text: 'em construcao',
+      icon: 'ellipse',
+    },
+    {
+      route: 'tabs/tab3',
+      text: 'em construcao',
+      icon: 'square',
+    },
+  ] as TabsInterface[];
 
-  tabsListener(route: string){
-    this.navCtrl.navigateForward(route);
+  manageTab(tab: TabsInterface) {
+    this.navCtrl.navigateForward(tab.route, { state: tab });
   }
 }
