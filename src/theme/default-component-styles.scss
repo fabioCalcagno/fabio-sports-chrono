@@ -1,0 +1,72 @@
+/**
+  Use with care! ATT fcalcagno
+*/
+
+ion-content.chrono-container {
+  --padding-bottom: var(--medium) --padding-top: var(--medium) --padding-end:
+    24px;
+  --padding-start: 24px;
+}
+
+body {
+  --small: 8px;
+  --medium: 16px;
+  --large: 24px;
+  --extra-large: 32px;
+}
+
+.mt32 {
+  margin-top: var(--extra-large);
+}
+
+.mt24 {
+  margin-top: var(--large);
+}
+
+.mt16 {
+  margin-top: var(--medium);
+}
+
+.mt8 {
+  margin-top: var(--small);
+}
+
+.mr16 {
+  margin-right: var(--medium);
+}
+
+.mr8 {
+  margin-right: var(--small);
+}
+
+.ml16 {
+  margin-left: var(--medium);
+}
+
+.ml8 {
+  margin-left: var(--small);
+}
+
+.mh16 {
+  margin: 0 var(--medium);
+}
+
+.mh8 {
+  margin: 0 var(--small);
+}
+
+.mv16 {
+  margin: 16px 0;
+}
+
+.mv8 {
+  margin: var(--small) 0;
+}
+
+.mf16 {
+  margin: var(--medium);
+}
+
+.mf8 {
+  margin: var(--medium);
+}

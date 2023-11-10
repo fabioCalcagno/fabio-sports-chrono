@@ -1,0 +1,21 @@
+ion-header > ion-toolbar {
+  min-height: inherit;
+  text-align: center;
+  --padding-top: var(--large);
+  --padding-bottom: var(--large);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  z-index: 0;
+
+  div.voltar {
+    display: flex;
+    padding-left: var(--medium);
+    position: absolute;
+    ion-icon {
+      padding-right: var(--small);
+    }
+    z-index: 1;
+    align-items: center;
+  }
+}

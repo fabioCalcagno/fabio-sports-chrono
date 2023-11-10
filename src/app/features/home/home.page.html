@@ -1,0 +1,16 @@
+<app-chrono-header title="Home" [showBackButton]="false"></app-chrono-header>
+<ion-content class="chrono-container" [scrollY]="false">
+  <ion-card class="mt32">
+    <ion-card-header>
+      <ion-card-title>Vamos começar ?</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      A configuração do timer é bem facil, a cada etapa preenchida desbloqueamos
+      a próxima!
+    </ion-card-content>
+    <ion-button class="mf16" (click)="setDirection()">
+      <ion-icon shape="round" size="small" name="alarm-outline">Ir</ion-icon>
+    </ion-button>
+  </ion-card>
+</ion-content>
