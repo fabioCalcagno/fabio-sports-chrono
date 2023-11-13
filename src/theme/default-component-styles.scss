@@ -3,9 +3,10 @@
 */
 
 ion-content.chrono-container {
-  --padding-bottom: var(--medium) --padding-top: var(--medium) --padding-end:
-    24px;
-  --padding-start: 24px;
+  --padding-bottom: var(--medium);
+  --padding-top: var(--medium);
+  --padding-end: var(--large);
+  --padding-start: var(--large);
 }
 
 body {

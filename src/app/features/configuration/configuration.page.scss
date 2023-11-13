@@ -1,0 +1,54 @@
+.chrono-container {
+  ion-button.config-ready-button::part(native) {
+    color: var(--white-text-color);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: auto;
+  }
+}
+
+app-chrono-number-inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--extra-large);
+}
+
+.fadeOutUp {
+  animation: fadeOutUp 2s;
+  -moz-animation: fadeOutUp 2s;
+  -webkit-animation: fadeOutUp 2s;
+  -o-animation: fadeOutUp 2s;
+}
+
+ion-card.accept-message-card {
+  --background: var(--dark-blue);
+  ion-card-title,
+  ion-card-subtitle {
+    color: var(--white-text-color);
+  }
+}
+
+.just-card-wrapper {
+  --background: transparent;
+  padding: 16px 16px 24px 16px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border-radius: 16px;
+
+  > ion-card-title {
+    --color: var(--dark-blue);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+}

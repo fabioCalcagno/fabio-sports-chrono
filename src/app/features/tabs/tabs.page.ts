@@ -17,7 +17,7 @@ export class TabsPage {
       icon: 'home-outline',
     },
     {
-      route: 'tabs/home',
+      route: 'tabs/configuration',
       text: 'Configure',
       icon: 'alarm-outline',
     },

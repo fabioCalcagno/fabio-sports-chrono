@@ -1,0 +1,42 @@
+<form>
+  <div class="configuracoes__number-input">
+    <div class="configuracoes__number-input_container">
+      <div class="configuracoes__number-input_container-wrapper">
+        <ion-buttons>
+          <ion-button (click)="add()" [disabled]="numMax">
+            <ion-icon
+              slot="icon-only"
+              color="primary"
+              name="add-circle"
+            ></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-item lines="none">
+          <ion-label>{{ participantes }}</ion-label>
+        </ion-item>
+        <ion-buttons>
+          <ion-button (click)="remove()" [disabled]="numMin">
+            <ion-icon
+              slot="icon-only"
+              color="danger"
+              name="remove-circle"
+            ></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+    </div>
+  </div>
+  <ion-item
+    class="error-container"
+    *ngIf="numMax && showMsg"
+    lines="none"
+    button="true"
+  >
+    <ion-text color="danger">
+      <p>
+        Por questões de usabilidade o numero máximo de participantes é {{ max }}
+      </p>
+    </ion-text>
+    <ion-icon slot="start" color="warning" name="flash"></ion-icon>
+  </ion-item>
+</form>

@@ -1,1 +1,40 @@
 <app-chrono-header title="Configuração"></app-chrono-header>
+<ion-content class="chrono-container" [scrollY]="false">
+  <ion-card
+    *ngIf="!lido_Ok"
+    [ngClass]="{'fadeOutUp' : fadeOut}"
+    class="accept-message-card"
+  >
+    <ion-card-content>
+      <ion-card-title color="primary">Monte seu treino</ion-card-title>
+      <ion-card-subtitle
+        >Defina os dados de acordo com a sua necessidade e fique pronto para
+        começar, não se preocupe caso você precise pode editar ou criar outras
+        configurações rapidamente.</ion-card-subtitle
+      >
+      <ion-button
+        expand="block"
+        color="primary"
+        [disabled]="!tempoMininoLeituraAtingido"
+        class="mt16"
+        (click)="aceiteFn()"
+        >Ok</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="just-card-wrapper mt16">
+    <ion-card-title>Adicione os participantes</ion-card-title>
+    <app-chrono-number-inputs></app-chrono-number-inputs>
+  </ion-card>
+  <ion-card class="just-card-wrapper mt16">
+    <ion-card-title>Quantas voltas?</ion-card-title>
+    <app-chrono-number-inputs></app-chrono-number-inputs>
+  </ion-card>
+  <ion-button
+    type="submit"
+    expand="block"
+    color="success"
+    class="config-ready-button"
+    >Pronto!</ion-button
+  >
+</ion-content>
